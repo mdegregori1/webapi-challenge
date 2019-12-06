@@ -1,6 +1,6 @@
 const express = require('express');
 
-// const postRouter = require("./posts/postRouter.js");
+const projectRouter = require("./router/project-router.js");
 // const userRouter = require("./users/userRouter.js");
 
 
@@ -19,7 +19,8 @@ function logger(req, res, next) {
 
 server.use(express.json());
 server.use(logger)
+server.use('/api/project', projectRouter)
 // server.use('/users', userRouter)
-// server.use('/post', postRouter)
+
 
 module.exports = server;
