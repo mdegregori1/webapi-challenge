@@ -40,13 +40,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+   1. Express allows you to make HTTP Requests
+   2. Express allows you to create middleware functions
+
+
 - [ ] Describe Middleware?
+
+Middleware is usually a function(s) that allows for communication between req(the user request) and res(the server response). These can be built into node (like server.use, for example), can be downloaded(like Helmet()), or can be completely custom. 
 
 - [ ] Describe a Resource?
 
+An endpoint that contains/gives the user access to data, usually via an HTTP request. 
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+The API can return a status message, that can include either the event, or (if a put), an event + the body that was inputted.
+
 - [ ] How can we partition our application into sub-applications?
+
+We can do this by creating routes, and then creating a file for each specific route - almost like you would create a new component in react. 
 
 ## Minimum Viable Product
 
